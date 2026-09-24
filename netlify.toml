@@ -1,0 +1,11 @@
+# Netlify: koppel de GitHub-repo. Niet de bronmap slepen.
+# Build command en publish directory staan hier, zodat de site-instellingen
+# ze automatisch overnemen.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Vite, Nitro en TypeScript staan in devDependencies.
+  NPM_FLAGS = "--include=dev"
