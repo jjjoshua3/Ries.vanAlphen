@@ -10,20 +10,20 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${APP_NAME} — Televisiepersoonlijkheid & Volkszanger` },
+      { title: `${APP_NAME} — Volkszanger` },
       {
         name: "description",
         content:
-          "Ik ben Ries van Alphen, televisiepersoonlijkheid en volkszanger. Bekend van Kopen Zonder Kijken en SLAM!. Boek mij voor je evenement.",
+          "Ik ben Ries van Alphen, jouw volkszanger voor een onvergetelijke avond. Boek mij direct.",
       },
-      { name: "theme-color", content: "#0b0b0b" },
+      { name: "theme-color", content: "#1a1615" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap",
       },
       { rel: "icon", type: "image/png", href: "/favicon.png", sizes: "192x192" },
       { rel: "stylesheet", href: appCss },

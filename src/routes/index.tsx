@@ -17,14 +17,7 @@ function Home() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 8);
-      const frame = document.querySelector<HTMLElement>("[data-parallax]");
-      if (!frame || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      const rect = frame.getBoundingClientRect();
-      const shift = (rect.top + rect.height / 2 - window.innerHeight / 2) * -0.04;
-      frame.style.transform = `translate3d(0, ${shift.toFixed(1)}px, 0)`;
-    };
+    const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -104,45 +97,47 @@ function Home() {
             Ries van Alphen
           </h1>
           <div className="hero-rule" aria-hidden="true" />
-          <p className="hero-sub">Televisiepersoonlijkheid & Volkszanger</p>
+          <p className="hero-sub">Jouw volkszanger voor een onvergetelijke avond.</p>
           <a className="ghost" href="#boek-mij">
-            Boek mij
+            Boek mij direct
           </a>
         </section>
 
-        <section className="section" id="over-mij" aria-labelledby="bio-title">
+        <section className="section bio" id="over-mij" aria-labelledby="bio-title">
           <div className="split">
             <div className="prose" data-reveal>
-              <p className="eyebrow">Over mij</p>
-              <h2 id="bio-title">Van televisie naar het levenslied</h2>
+              <p className="eyebrow">Mijn verhaal</p>
+              <h2 id="bio-title" className="quote">
+                Van de straat naar het podium, de connectie met de mensen staat altijd voorop.
+              </h2>
               <p>
-                Ik ben Ries van Alphen. Televisiepersoonlijkheid en volkszanger uit Utrecht. Mijn
-                pad loopt van de camera naar het podium.
+                Jullie kennen me misschien van mijn avontuur in Kopen Zonder Kijken, of van de tijd
+                dat ik met een microfoon in de hand voor SLAM! de straat op ging om de meest
+                uiteenlopende mensen te spreken. Die momenten hebben me gevormd, maar mijn ware
+                passie heb ik altijd gevonden in de muziek.
               </p>
               <p>
-                Bij Kopen Zonder Kijken stond ik voor een landelijk publiek. Voor SLAM! maakte ik
-                straatinterviews die mensen bleven delen. Direct, nieuwsgierig en zonder omweg.
-              </p>
-              <p>
-                Nu zing ik het Nederlandse levenslied. Warm, helder en met de zaal mee. Daar sta
-                ik voor.
+                Tegenwoordig sta ik met trots op het podium als volkszanger. Ik zing het
+                Nederlandse levenslied recht uit het hart. Geen afstandelijkheid, maar samen met
+                de hele zaal lachen, zingen en een sfeer neerzetten die je raakt. Dat is wat ik
+                doe, en dat is waar ik voor leef.
               </p>
             </div>
             <figure className="portrait" data-reveal>
               <img
-                data-parallax
                 src="/ries.jpg"
                 width={387}
                 height={516}
-                alt="Portret van Ries van Alphen."
+                alt="Ries van Alphen."
               />
             </figure>
           </div>
         </section>
 
         <section className="section book" id="boek-mij" aria-labelledby="boek-title" data-reveal>
-          <p className="eyebrow">Boek mij</p>
-          <h2 id="boek-title">Boek mij voor een exclusief optreden of evenement.</h2>
+          <p className="eyebrow">Boekingen</p>
+          <h2 id="boek-title">Zin in een feestje of zoek je de juiste sfeer voor jouw evenement?</h2>
+          <p className="book-lead">Neem direct contact met mij op.</p>
           <a className="mail" href={`mailto:${MAIL}?subject=${encodeURIComponent("Boeking Ries van Alphen")}`}>
             {MAIL}
           </a>
