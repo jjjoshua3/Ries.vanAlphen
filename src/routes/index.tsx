@@ -86,14 +86,14 @@ function Home() {
           <span />
         </button>
         <nav id="site-nav" className="site-nav" aria-label="Hoofdmenu">
-          <a href="#biografie" onClick={close}>
-            Biografie
+          <a href="#over-mij" onClick={close}>
+            Over mij
           </a>
-          <a href="#boeken" onClick={close}>
-            Boeken
+          <a href="#boek-mij" onClick={close}>
+            Boek mij
           </a>
           <a href="#connect" onClick={close}>
-            Connect
+            Volg mij
           </a>
         </nav>
       </header>
@@ -105,27 +105,27 @@ function Home() {
           </h1>
           <div className="hero-rule" aria-hidden="true" />
           <p className="hero-sub">Televisiepersoonlijkheid & Volkszanger</p>
-          <a className="ghost" href="#boeken">
-            Boeken
+          <a className="ghost" href="#boek-mij">
+            Boek mij
           </a>
         </section>
 
-        <section className="section" id="biografie" aria-labelledby="bio-title">
+        <section className="section" id="over-mij" aria-labelledby="bio-title">
           <div className="split">
             <div className="prose" data-reveal>
-              <p className="eyebrow">Biografie</p>
+              <p className="eyebrow">Over mij</p>
               <h2 id="bio-title">Van televisie naar het levenslied</h2>
               <p>
-                Ries van Alphen is televisiepersoonlijkheid en volkszanger uit Utrecht. Zijn pad
-                loopt van de camera naar het podium.
+                Ik ben Ries van Alphen. Televisiepersoonlijkheid en volkszanger uit Utrecht. Mijn
+                pad loopt van de camera naar het podium.
               </p>
               <p>
-                Bij Kopen Zonder Kijken stond hij voor een landelijk publiek. Voor SLAM! maakte hij
+                Bij Kopen Zonder Kijken stond ik voor een landelijk publiek. Voor SLAM! maakte ik
                 straatinterviews die mensen bleven delen. Direct, nieuwsgierig en zonder omweg.
               </p>
               <p>
-                Nu zingt hij het Nederlandse levenslied. Warm, helder en met de zaal mee. Dat is
-                het werk waar hij nu voor staat.
+                Nu zing ik het Nederlandse levenslied. Warm, helder en met de zaal mee. Daar sta
+                ik voor.
               </p>
             </div>
             <figure className="portrait" data-reveal>
@@ -140,9 +140,9 @@ function Home() {
           </div>
         </section>
 
-        <section className="section book" id="boeken" aria-labelledby="boek-title" data-reveal>
-          <p className="eyebrow">Boekingen</p>
-          <h2 id="boek-title">Beschikbaar voor exclusieve optredens en evenementen.</h2>
+        <section className="section book" id="boek-mij" aria-labelledby="boek-title" data-reveal>
+          <p className="eyebrow">Boek mij</p>
+          <h2 id="boek-title">Boek mij voor een exclusief optreden of evenement.</h2>
           <a className="mail" href={`mailto:${MAIL}?subject=${encodeURIComponent("Boeking Ries van Alphen")}`}>
             {MAIL}
           </a>

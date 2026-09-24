@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Ries van Alphen is televisiepersoonlijkheid en volkszanger. Bekend van Kopen Zonder Kijken en SLAM!. Beschikbaar voor optredens en evenementen.",
+          "Ik ben Ries van Alphen, televisiepersoonlijkheid en volkszanger. Bekend van Kopen Zonder Kijken en SLAM!. Boek mij voor je evenement.",
       },
       { name: "theme-color", content: "#0b0b0b" },
     ],

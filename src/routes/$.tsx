@@ -36,7 +36,7 @@ function NotFoundPage() {
             <p className="eyebrow">404</p>
             <h1>Oei, deze pagina bestaat niet.</h1>
             <p className="lost-lead">
-              Het adres klopt niet, of de pagina is er nog niet. Ga terug naar de homepage.
+              Dit adres klopt niet, of de pagina is er nog niet. Ga terug naar mijn homepage.
             </p>
             <a className="ghost" href="/">
               Home
